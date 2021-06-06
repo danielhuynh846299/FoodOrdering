@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            app:tabBackground="@color/colorPrimaryDark"
+            app:tabGravity="fill"
+            app:tabMaxWidth="0dp"
+            app:tabSelectedTextColor="#ffffff">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/filter_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ALL" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/filter_favourite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FAVOURITE"
+                android:visibility="visible" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/filter_burger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BURGER" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/filter_pizza"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PIZZA" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/filter_sushi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SUSHI" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/filter_drinks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DRINKS" />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

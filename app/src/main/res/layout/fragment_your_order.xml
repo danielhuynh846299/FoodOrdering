@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- TODO: Update blank fragment layout -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".YourOrder"
+    tools:layout_constraintBaseline_creator="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bbdefb"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingLeft="100dp"
+                android:text="Your Order "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="320dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Status Of Your Ordered "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:scrollbars="vertical"
+                    android:id="@+id/list_order"
+                    android:layout_width="400dp"
+                    android:layout_height="350dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginStart="40dp"/>
+
+
+                <ListView
+                    android:id="@+id/list_ordered"
+                    android:layout_width="400dp"
+                    android:layout_height="350dp"
+                    android:layout_marginStart="50dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/go_to_kitchen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_weight="1"
+                    android:text=" Comfirm To Kichen"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_process_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="400dp"
+                    android:layout_weight="1"
+                    android:text="Process To Payment"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
